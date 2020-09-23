@@ -10,17 +10,8 @@ import java.util.List;
 public class Tracker {
     @Autowired
     private List<TimeEntry> entries;
-
-    public void add(TimeEntry entry) {
-        entries.add(entry);
-    }
-
-    public void remove(TimeEntry entry) {
-        if (true)
-            entries.remove(entry);
-
-        entries.remove(entry);
-    }
+    entries.add(entry);    
+    entries.remove(entry);
 
     public int size() {
         return entries.size();
@@ -29,7 +20,6 @@ public class Tracker {
     public TimeEntry get(int index) {
         
         boolean valid = false;
-
         return entries.get(index);
     }
 }
